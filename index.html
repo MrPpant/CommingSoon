@@ -4,59 +4,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="eFut - creating and managing football e-games tournaments." />
   <script src="https://kit.fontawesome.com/9a00dfd817.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" />
-  <title>Coming Soon Website</title>
+  <title>eFut Tourney | Football eGames Tournaments</title>
 </head>
 
 <body>
   <header>
-    <a href="#" class="logo">Brand Name</a>
+    <a href="#" class="logo">eFut Tourney</a>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="https://playchamp.app">Home</a></li>
+        <li><a href="mailto:info@playchamp.app">Contact Us</a></li>
+        <li><a href="https://playchamp.app">About</a></li>
       </ul>
     </nav>
   </header>
+
   <section>
     <img src="img/curve.png" alt="" class="wave" />
-    <div class="contentBx">
-      <h2>Coming Soon</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
-        provident ad harum laudantium eligendi officiis tempora ea alias dicta
-        dolorem odit cumque sit voluptatem soluta non debitis
-      </p>
 
+    <div class="contentBx">
+      <h2>We're Launching Soon!</h2>
+      <p>
+        eFut Tourney is an alternative of Play Champ app for organizing, managing, and competing in online football e-gaming tournaments. Get notified when we go live and be part of the first tournaments!
+      </p>
       <a href="#" class="btn" onclick="toggle();">Notify Me!</a>
     </div>
+
     <div class="imgBx">
-      <img src="img/man.png" alt="" />
+      <img src="img/man.png" alt="Gamer Illustration" />
     </div>
+
     <div class="action" onclick="actionToggle();">
       <span>+</span>
       <ul>
-        <li><i class="fab fa-facebook-f"></i></li>
-        <li><i class="fab fa-twitter"></i></li>
-        <li><i class="fab fa-instagram"></i></li>
-        <li><i class="fab fa-pinterest-p"></i></li>
-        <li><i class="fab fa-linkedin-in"></i></li>
+        <li><a href="https://web.facebook.com/PlaychampApp/"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://x.com/Playchamp_app"><i class="fab fa-twitter"></i></a></li>
       </ul>
     </div>
   </section>
+
   <div class="newsletter">
     <a href="#" onclick="toggle();" class="close"><i class="fas fa-times"></i></a>
     <h2>Stay Tuned</h2>
     <p>Get notified at launch</p>
     <div class="inputBox">
-      <form>
+      <form onsubmit="event.preventDefault(); alert('Thank you! You’ll be notified at launch.');">
         <input type="email" required placeholder="Enter Email Address" />
         <input type="submit" value="Submit" />
       </form>
     </div>
   </div>
+
   <script src="main.js"></script>
 </body>
 
