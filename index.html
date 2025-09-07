@@ -8,6 +8,12 @@
   <script src="https://kit.fontawesome.com/9a00dfd817.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" />
   <title>eFut Tourney | Football eGames Tournaments</title>
+  <style>
+    /* Optional: native smooth scroll support */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body>
@@ -30,7 +36,7 @@
       <p>
         eFut Tourney is a self regulated version of Play Champ app for organizing and managing football e-gaming tournaments. Get notified when we go live and be part of the first tournaments!
       </p>
-      <a href="#" class="btn" onclick="toggle();">Notify Me!</a>
+      <a href="#notify-section" class="btn" onclick="scrollToNotify(event);">Notify Me!</a>
     </div>
 
     <div class="imgBx">
@@ -46,12 +52,22 @@
     </div>
   </section>
 
-  <div class="inputBox">
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdMns09WdNMn7-ghoeNTuNE3BVIdDBoia5JvPMFNh_6yaM-0g/viewform?embedded=true"
-          width="100%" height="418" frameborder="0" marginheight="0" marginwidth="0">
-    Loading…
-  </iframe>
-</div>
+  <div class="inputBox" id="notify-section">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdMns09WdNMn7-ghoeNTuNE3BVIdDBoia5JvPMFNh_6yaM-0g/viewform?embedded=true"
+            width="100%" height="418" frameborder="0" marginheight="0" marginwidth="0">
+      Loading…
+    </iframe>
+  </div>
+
+  <script>
+    function scrollToNotify(event) {
+      event.preventDefault();
+      const target = document.getElementById('notify-section');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
 
   <script src="main.js"></script>
 </body>
